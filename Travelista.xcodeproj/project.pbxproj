@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		810D198322EF837D00D994CB /* AirPortButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 810D198222EF837D00D994CB /* AirPortButtonView.xib */; };
+		8113433022EE6F300023F0BE /* AirPortButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113432F22EE6F300023F0BE /* AirPortButtonView.swift */; };
+		8113433222EE6F730023F0BE /* DateButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113433122EE6F730023F0BE /* DateButtonView.swift */; };
+		8113433522EE75A80023F0BE /* DateButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8113433422EE75A80023F0BE /* DateButtonView.xib */; };
+		812BB22522DEB77800EA8462 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812BB22422DEB77800EA8462 /* CollectionViewCell.swift */; };
+		812BB25C22E0D1E500EA8462 /* DaysCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812BB25A22E0D1E500EA8462 /* DaysCollectionViewCell.swift */; };
+		812BB25D22E0D1E500EA8462 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812BB25B22E0D1E500EA8462 /* TableViewCell.swift */; };
+		812BB25F22E0D1F700EA8462 /* ResultDisplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812BB25E22E0D1F700EA8462 /* ResultDisplayController.swift */; };
+		812BB26122E3842800EA8462 /* BottomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812BB26022E3842800EA8462 /* BottomCollectionViewCell.swift */; };
+		8149353322F642CF005D9C98 /* ClientAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149353222F642CF005D9C98 /* ClientAPI.swift */; };
+		8149353522F6434B005D9C98 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149353422F6434B005D9C98 /* Models.swift */; };
+		8149353722F64374005D9C98 /* AirportData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8149353622F64374005D9C98 /* AirportData.swift */; };
+		8168D05022ECA4C900F32BBE /* NSCacheHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8168D04922ECA4C900F32BBE /* NSCacheHelper.swift */; };
+		8168D05122ECA4C900F32BBE /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8168D04A22ECA4C900F32BBE /* UserDefaultsHelper.swift */; };
+		8168D05222ECA4C900F32BBE /* GraphicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8168D04B22ECA4C900F32BBE /* GraphicHelper.swift */; };
+		8168D05322ECA4C900F32BBE /* NetWorkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8168D04C22ECA4C900F32BBE /* NetWorkHelper.swift */; };
+		8168D05422ECA4C900F32BBE /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8168D04D22ECA4C900F32BBE /* ErrorHandler.swift */; };
+		8168D05522ECA4C900F32BBE /* LocationManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8168D04E22ECA4C900F32BBE /* LocationManagerHelper.swift */; };
+		8168D05622ECA4C900F32BBE /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8168D04F22ECA4C900F32BBE /* LocationHelper.swift */; };
+		81C26E0422DA888D00F9759A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C26E0322DA888D00F9759A /* AppDelegate.swift */; };
+		81C26E0622DA888D00F9759A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C26E0522DA888D00F9759A /* MainViewController.swift */; };
+		81C26E0922DA888D00F9759A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C26E0722DA888D00F9759A /* Main.storyboard */; };
+		81C26E0B22DA888F00F9759A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C26E0A22DA888F00F9759A /* Assets.xcassets */; };
+		81C26E0E22DA888F00F9759A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C26E0C22DA888F00F9759A /* LaunchScreen.storyboard */; };
+		81E588D622EDF4FA00C1076B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E588D522EDF4FA00C1076B /* SearchViewController.swift */; };
+		81EE98D822EF8B5E000B6EF2 /* PassengerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81EE98D722EF8B5E000B6EF2 /* PassengerView.xib */; };
+		81EE98DB22EFB717000B6EF2 /* PassengerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EE98DA22EFB717000B6EF2 /* PassengerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		810D198222EF837D00D994CB /* AirPortButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AirPortButtonView.xib; sourceTree = "<group>"; };
+		8113432F22EE6F300023F0BE /* AirPortButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortButtonView.swift; sourceTree = "<group>"; };
+		8113433122EE6F730023F0BE /* DateButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateButtonView.swift; sourceTree = "<group>"; };
+		8113433422EE75A80023F0BE /* DateButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateButtonView.xib; sourceTree = "<group>"; };
+		812BB22422DEB77800EA8462 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		812BB25A22E0D1E500EA8462 /* DaysCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysCollectionViewCell.swift; sourceTree = "<group>"; };
+		812BB25B22E0D1E500EA8462 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		812BB25E22E0D1F700EA8462 /* ResultDisplayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultDisplayController.swift; sourceTree = "<group>"; };
+		812BB26022E3842800EA8462 /* BottomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCollectionViewCell.swift; sourceTree = "<group>"; };
+		8149353222F642CF005D9C98 /* ClientAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientAPI.swift; sourceTree = "<group>"; };
+		8149353422F6434B005D9C98 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		8149353622F64374005D9C98 /* AirportData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportData.swift; sourceTree = "<group>"; };
+		8168D04922ECA4C900F32BBE /* NSCacheHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCacheHelper.swift; sourceTree = "<group>"; };
+		8168D04A22ECA4C900F32BBE /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		8168D04B22ECA4C900F32BBE /* GraphicHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphicHelper.swift; sourceTree = "<group>"; };
+		8168D04C22ECA4C900F32BBE /* NetWorkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkHelper.swift; sourceTree = "<group>"; };
+		8168D04D22ECA4C900F32BBE /* ErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		8168D04E22ECA4C900F32BBE /* LocationManagerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManagerHelper.swift; sourceTree = "<group>"; };
+		8168D04F22ECA4C900F32BBE /* LocationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationHelper.swift; sourceTree = "<group>"; };
+		81C26E0022DA888D00F9759A /* Travelista.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travelista.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81C26E0322DA888D00F9759A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		81C26E0522DA888D00F9759A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		81C26E0822DA888D00F9759A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		81C26E0A22DA888F00F9759A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81C26E0D22DA888F00F9759A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81C26E0F22DA888F00F9759A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81E588D522EDF4FA00C1076B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		81EE98D722EF8B5E000B6EF2 /* PassengerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PassengerView.xib; sourceTree = "<group>"; };
+		81EE98DA22EFB717000B6EF2 /* PassengerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81C26DFD22DA888D00F9759A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8113433322EE6F790023F0BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8113432F22EE6F300023F0BE /* AirPortButtonView.swift */,
+				8113433122EE6F730023F0BE /* DateButtonView.swift */,
+				81EE98DA22EFB717000B6EF2 /* PassengerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		812BB23222DFBB8500EA8462 /* Cell Views */ = {
+			isa = PBXGroup;
+			children = (
+				812BB25A22E0D1E500EA8462 /* DaysCollectionViewCell.swift */,
+				812BB25B22E0D1E500EA8462 /* TableViewCell.swift */,
+				812BB22422DEB77800EA8462 /* CollectionViewCell.swift */,
+				812BB26022E3842800EA8462 /* BottomCollectionViewCell.swift */,
+			);
+			path = "Cell Views";
+			sourceTree = "<group>";
+		};
+		812BB23722DFF08E00EA8462 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				812BB25E22E0D1F700EA8462 /* ResultDisplayController.swift */,
+				81C26E0522DA888D00F9759A /* MainViewController.swift */,
+				81E588D522EDF4FA00C1076B /* SearchViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8168D04822ECA4C900F32BBE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8168D04922ECA4C900F32BBE /* NSCacheHelper.swift */,
+				8168D04A22ECA4C900F32BBE /* UserDefaultsHelper.swift */,
+				8168D04B22ECA4C900F32BBE /* GraphicHelper.swift */,
+				8168D04C22ECA4C900F32BBE /* NetWorkHelper.swift */,
+				8168D04D22ECA4C900F32BBE /* ErrorHandler.swift */,
+				8168D04E22ECA4C900F32BBE /* LocationManagerHelper.swift */,
+				8168D04F22ECA4C900F32BBE /* LocationHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		81C26DF722DA888D00F9759A = {
+			isa = PBXGroup;
+			children = (
+				81C26E0222DA888D00F9759A /* Travelista */,
+				81C26E0122DA888D00F9759A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		81C26E0122DA888D00F9759A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81C26E0022DA888D00F9759A /* Travelista.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81C26E0222DA888D00F9759A /* Travelista */ = {
+			isa = PBXGroup;
+			children = (
+				812BB23722DFF08E00EA8462 /* Controllers */,
+				8168D04822ECA4C900F32BBE /* Helpers */,
+				812BB23222DFBB8500EA8462 /* Cell Views */,
+				81EE98D922EFB6E5000B6EF2 /* StoryBoard and Nibs */,
+				8149353222F642CF005D9C98 /* ClientAPI.swift */,
+				8149353622F64374005D9C98 /* AirportData.swift */,
+				8149353422F6434B005D9C98 /* Models.swift */,
+				8113433322EE6F790023F0BE /* Views */,
+				81C26E0322DA888D00F9759A /* AppDelegate.swift */,
+				81C26E0A22DA888F00F9759A /* Assets.xcassets */,
+				81C26E0F22DA888F00F9759A /* Info.plist */,
+			);
+			path = Travelista;
+			sourceTree = "<group>";
+		};
+		81EE98D922EFB6E5000B6EF2 /* StoryBoard and Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				810D198222EF837D00D994CB /* AirPortButtonView.xib */,
+				8113433422EE75A80023F0BE /* DateButtonView.xib */,
+				81EE98D722EF8B5E000B6EF2 /* PassengerView.xib */,
+				81C26E0722DA888D00F9759A /* Main.storyboard */,
+				81C26E0C22DA888F00F9759A /* LaunchScreen.storyboard */,
+			);
+			path = "StoryBoard and Nibs";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81C26DFF22DA888D00F9759A /* Travelista */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81C26E1222DA888F00F9759A /* Build configuration list for PBXNativeTarget "Travelista" */;
+			buildPhases = (
+				81C26DFC22DA888D00F9759A /* Sources */,
+				81C26DFD22DA888D00F9759A /* Frameworks */,
+				81C26DFE22DA888D00F9759A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Travelista;
+			productName = latifaTravels;
+			productReference = 81C26E0022DA888D00F9759A /* Travelista.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81C26DF822DA888D00F9759A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = FoodStepProject;
+				TargetAttributes = {
+					81C26DFF22DA888D00F9759A = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 81C26DFB22DA888D00F9759A /* Build configuration list for PBXProject "Travelista" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81C26DF722DA888D00F9759A;
+			productRefGroup = 81C26E0122DA888D00F9759A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81C26DFF22DA888D00F9759A /* Travelista */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81C26DFE22DA888D00F9759A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8113433522EE75A80023F0BE /* DateButtonView.xib in Resources */,
+				81C26E0E22DA888F00F9759A /* LaunchScreen.storyboard in Resources */,
+				81C26E0B22DA888F00F9759A /* Assets.xcassets in Resources */,
+				81EE98D822EF8B5E000B6EF2 /* PassengerView.xib in Resources */,
+				810D198322EF837D00D994CB /* AirPortButtonView.xib in Resources */,
+				81C26E0922DA888D00F9759A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81C26DFC22DA888D00F9759A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8113433022EE6F300023F0BE /* AirPortButtonView.swift in Sources */,
+				81E588D622EDF4FA00C1076B /* SearchViewController.swift in Sources */,
+				8168D05122ECA4C900F32BBE /* UserDefaultsHelper.swift in Sources */,
+				812BB25D22E0D1E500EA8462 /* TableViewCell.swift in Sources */,
+				8168D05222ECA4C900F32BBE /* GraphicHelper.swift in Sources */,
+				812BB26122E3842800EA8462 /* BottomCollectionViewCell.swift in Sources */,
+				8149353322F642CF005D9C98 /* ClientAPI.swift in Sources */,
+				8113433222EE6F730023F0BE /* DateButtonView.swift in Sources */,
+				8149353722F64374005D9C98 /* AirportData.swift in Sources */,
+				81EE98DB22EFB717000B6EF2 /* PassengerView.swift in Sources */,
+				812BB25F22E0D1F700EA8462 /* ResultDisplayController.swift in Sources */,
+				8168D05522ECA4C900F32BBE /* LocationManagerHelper.swift in Sources */,
+				8168D05022ECA4C900F32BBE /* NSCacheHelper.swift in Sources */,
+				8168D05322ECA4C900F32BBE /* NetWorkHelper.swift in Sources */,
+				81C26E0622DA888D00F9759A /* MainViewController.swift in Sources */,
+				81C26E0422DA888D00F9759A /* AppDelegate.swift in Sources */,
+				8168D05422ECA4C900F32BBE /* ErrorHandler.swift in Sources */,
+				812BB22522DEB77800EA8462 /* CollectionViewCell.swift in Sources */,
+				8168D05622ECA4C900F32BBE /* LocationHelper.swift in Sources */,
+				812BB25C22E0D1E500EA8462 /* DaysCollectionViewCell.swift in Sources */,
+				8149353522F6434B005D9C98 /* Models.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		81C26E0722DA888D00F9759A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81C26E0822DA888D00F9759A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		81C26E0C22DA888F00F9759A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81C26E0D22DA888F00F9759A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81C26E1022DA888F00F9759A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		81C26E1122DA888F00F9759A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81C26E1322DA888F00F9759A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MFLU28S62;
+				INFOPLIST_FILE = "$(SRCROOT)/Travelista/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FoodStepProject.V1.latifaTravels;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		81C26E1422DA888F00F9759A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MFLU28S62;
+				INFOPLIST_FILE = "$(SRCROOT)/Travelista/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FoodStepProject.V1.latifaTravels;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81C26DFB22DA888D00F9759A /* Build configuration list for PBXProject "Travelista" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81C26E1022DA888F00F9759A /* Debug */,
+				81C26E1122DA888F00F9759A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81C26E1222DA888F00F9759A /* Build configuration list for PBXNativeTarget "Travelista" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81C26E1322DA888F00F9759A /* Debug */,
+				81C26E1422DA888F00F9759A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81C26DF822DA888D00F9759A /* Project object */;
+}

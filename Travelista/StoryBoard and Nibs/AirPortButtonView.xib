@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AirPortButtonView" customModule="latifaTravels" customModuleProvider="target">
+            <connections>
+                <outlet property="airportCodeButtonView" destination="4Fy-Nn-QV4" id="RbW-Yq-SxZ"/>
+                <outlet property="cityButtonView" destination="gFq-XM-at5" id="EYC-hz-jZB"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="iZe-N7-eWl"/>
+                <outlet property="imageView" destination="lwO-f9-UTn" id="EX1-y1-4v5"/>
+                <outlet property="staticButtonView" destination="ULs-1p-XQy" id="ZMX-nv-dOg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="85"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULs-1p-XQy" userLabel="Static Label">
+                    <rect key="frame" x="0.0" y="0.0" width="125" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="HJ4-Gw-2NN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                    <state key="normal" title="From">
+                        <color key="titleColor" red="0.25882352939999997" green="0.26274509800000001" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="airButtonTapped:" destination="-1" eventType="touchUpInside" id="AUO-60-slx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Fy-Nn-QV4" userLabel="Airport Code Label">
+                    <rect key="frame" x="0.0" y="20" width="125" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <state key="normal" title="AirPort">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.25882352939999997" green="0.26274509800000001" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="airButtonTapped:" destination="-1" eventType="touchUpInside" id="9d9-Ay-IyJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFq-XM-at5" userLabel="City Label">
+                    <rect key="frame" x="35" y="60" width="90" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="mhh-q9-m0P"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="New York">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="airButtonTapped:" destination="-1" eventType="touchUpInside" id="reD-rX-zuh"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="flight-takeoff-line" translatesAutoresizingMaskIntoConstraints="NO" id="lwO-f9-UTn">
+                    <rect key="frame" x="0.0" y="60" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="TXn-U6-v9t"/>
+                        <constraint firstAttribute="width" constant="25" id="vcn-4g-IXf"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="gFq-XM-at5" firstAttribute="top" secondItem="4Fy-Nn-QV4" secondAttribute="bottom" id="3bg-xe-poj"/>
+                <constraint firstItem="ULs-1p-XQy" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="6c7-3m-gpu"/>
+                <constraint firstItem="ULs-1p-XQy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7S9-xZ-kZC"/>
+                <constraint firstAttribute="bottom" secondItem="gFq-XM-at5" secondAttribute="bottom" id="Ee2-hr-wfi"/>
+                <constraint firstItem="4Fy-Nn-QV4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="IMc-Fj-dw7"/>
+                <constraint firstItem="4Fy-Nn-QV4" firstAttribute="top" secondItem="ULs-1p-XQy" secondAttribute="bottom" id="Pb4-IK-553"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4Fy-Nn-QV4" secondAttribute="trailing" id="abL-wD-iDb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gFq-XM-at5" secondAttribute="trailing" id="bvS-Ts-I52"/>
+                <constraint firstAttribute="bottom" secondItem="lwO-f9-UTn" secondAttribute="bottom" id="eql-Pc-NZd"/>
+                <constraint firstItem="lwO-f9-UTn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="mYZ-hn-qef"/>
+                <constraint firstItem="ULs-1p-XQy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="rVM-PB-dU6"/>
+                <constraint firstItem="gFq-XM-at5" firstAttribute="leading" secondItem="lwO-f9-UTn" secondAttribute="trailing" constant="10" id="u6m-2t-dgt"/>
+                <constraint firstItem="lwO-f9-UTn" firstAttribute="top" secondItem="4Fy-Nn-QV4" secondAttribute="bottom" id="zyr-E7-GK7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-379.71014492753625" y="-221.65178571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="flight-takeoff-line" width="14" height="12"/>
+    </resources>
+</document>

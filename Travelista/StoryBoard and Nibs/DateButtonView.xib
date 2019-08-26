@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DateButtonView" customModule="latifaTravels" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="15c-ik-5XB" id="P7R-37-LIP"/>
+                <outlet property="dayButtonView" destination="BqJ-oP-L0P" id="YJN-DP-pue"/>
+                <outlet property="imageView" destination="8uw-1c-wmU" id="SjX-r9-JDH"/>
+                <outlet property="monthButtonView" destination="02q-rM-kdq" id="btK-45-mdB"/>
+                <outlet property="staticButtonView" destination="KM4-O7-VUP" id="ysk-go-qN1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="15c-ik-5XB">
+            <rect key="frame" x="0.0" y="0.0" width="166" height="85"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KM4-O7-VUP" userLabel="Static Button">
+                    <rect key="frame" x="0.0" y="0.0" width="141" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="wqN-TD-C1r"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                    <state key="normal" title="Departure">
+                        <color key="titleColor" red="0.25882352939999997" green="0.26274509800000001" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02q-rM-kdq" userLabel="Month Button">
+                    <rect key="frame" x="0.0" y="25" width="166" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <state key="normal" title="Month">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.25882352939999997" green="0.26274509800000001" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqJ-oP-L0P" userLabel="Day Button">
+                    <rect key="frame" x="0.0" y="65" width="166" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="eHC-Si-5h1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="day">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Calendar Light" translatesAutoresizingMaskIntoConstraints="NO" id="8uw-1c-wmU">
+                    <rect key="frame" x="141" y="0.0" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="L6i-c5-1pK"/>
+                        <constraint firstAttribute="width" constant="25" id="cfl-H9-dPO"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="BqJ-oP-L0P" secondAttribute="bottom" id="1fe-jH-YEy"/>
+                <constraint firstItem="8uw-1c-wmU" firstAttribute="top" secondItem="15c-ik-5XB" secondAttribute="top" id="7PY-Nj-o4B"/>
+                <constraint firstItem="KM4-O7-VUP" firstAttribute="leading" secondItem="15c-ik-5XB" secondAttribute="leading" id="DZw-Yj-fRE"/>
+                <constraint firstItem="KM4-O7-VUP" firstAttribute="top" secondItem="15c-ik-5XB" secondAttribute="top" id="Tfu-4N-wPN"/>
+                <constraint firstAttribute="trailing" secondItem="02q-rM-kdq" secondAttribute="trailing" id="VJY-Eh-lOl"/>
+                <constraint firstItem="BqJ-oP-L0P" firstAttribute="leading" secondItem="15c-ik-5XB" secondAttribute="leading" id="YXv-hB-II9"/>
+                <constraint firstAttribute="trailing" secondItem="8uw-1c-wmU" secondAttribute="trailing" id="Zfu-dB-4ws"/>
+                <constraint firstAttribute="trailing" secondItem="BqJ-oP-L0P" secondAttribute="trailing" id="buQ-Kl-xi5"/>
+                <constraint firstItem="BqJ-oP-L0P" firstAttribute="top" secondItem="02q-rM-kdq" secondAttribute="bottom" id="buu-BJ-Sqh"/>
+                <constraint firstItem="02q-rM-kdq" firstAttribute="top" secondItem="8uw-1c-wmU" secondAttribute="bottom" id="jXs-yx-yrv"/>
+                <constraint firstItem="02q-rM-kdq" firstAttribute="leading" secondItem="15c-ik-5XB" secondAttribute="leading" id="rY1-mG-2Ty"/>
+                <constraint firstItem="KM4-O7-VUP" firstAttribute="trailing" secondItem="8uw-1c-wmU" secondAttribute="leading" id="rYU-Mu-eFr"/>
+                <constraint firstItem="02q-rM-kdq" firstAttribute="top" secondItem="KM4-O7-VUP" secondAttribute="bottom" id="uVP-W8-aCD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="LXj-xe-Vrz"/>
+            <point key="canvasLocation" x="-355.07246376811599" y="-217.63392857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Calendar Light" width="21" height="21"/>
+    </resources>
+</document>
